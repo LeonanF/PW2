@@ -16,7 +16,7 @@ if ($result->num_rows > 0) {
         $email = $row['email'];
         $msg = $row['mensagem'];
 
-        // Exemplo de exibição dos dados
+        // Criar uma div para cada mensagem da tabela
         echo "<div class='solicitacao'>";
         echo "Solicitação " . $idSolicitacao . "<br>";
         echo "Nome: " . $nome . "<br>";
