@@ -1,17 +1,23 @@
 <?php
+
 session_start();
+
+// Verificar se já existe uma sessão iniciada
+if (isset($_SESSION['admin_username'])) {
+    // Redirecionar para a página de admin
+    header('Location: admin_area.php');
+    exit();
+}
+
+//Verificar se houve erro de login
+if (isset($_GET['error']) && $_GET['error'] == 'login_required') {
+    $error_message = 'Você deve fazer login primeiro.';
+}
 
 // Verificar se o formulário foi submetido
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     require 'connection.php';
-
-    $conn = new mysqli($host, $username, $password, $dbname);
-
-    // Verificar se a conexão foi estabelecida com sucesso
-    if ($conn->connect_error) {
-        die('Falha na conexão com o banco de dados: ' . $conn->connect_error);
-    }
 
     // Obter os dados do formulário
     $username = $_POST['username'];
@@ -33,6 +39,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             exit();
         }
     }
+
+    
 
     // Credenciais inválidas, exibir mensagem de erro
     $error_message = 'Nome de usuário ou senha incorretos.';

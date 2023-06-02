@@ -1,4 +1,5 @@
 <?php 
+
 $servername = "localhost"; // Nome do servidor MariaDB
 $username = "root"; // Nome de usuário do banco de dados
 $password = ""; // Senha do banco de dados
