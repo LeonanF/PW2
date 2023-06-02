@@ -16,6 +16,11 @@ body {
     align-items: center;
 }
 
+img {
+    width: 31rem;
+}
+
+
 .img-form {
     width: 50%;
     display: flex;
@@ -23,10 +28,7 @@ body {
     align-items: center;
     padding: 1rem;
     background-color: #fde3a7d7;
-}
-
-img {
-    width: 31rem;
+    border-radius: 7px 0 0 7px;
 }
 
 .container {
@@ -44,6 +46,8 @@ img {
     flex-direction: column;
     background-color: #fff;
     padding: 3rem;
+    
+    border-radius:  0 7px 7px 0;
 }
 
 .cabecalho-cadastro {
@@ -120,6 +124,24 @@ img {
     font-size: 0.75rem;
     font-weight: 600;
     color: #000000c0;
+}
+
+.btn-revert{
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    background: #6c63ff;
+    transition: transform 0.3s linear;
+}
+
+.btn-revert:hover{
+    transform: scale(1.1);
+}
+
+.btn-revert:active{
+    transform: scale(0.9);
 }
 
 @media screen and (max-width: 1336px) {

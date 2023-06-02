@@ -39,6 +39,7 @@ $conn->close();
 <head>
     <title>Cadastro de Administrador</title>
     <link rel="stylesheet" href="./css/cadastro.css">
+    <script src="./js/autenticacao.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -48,12 +49,12 @@ $conn->close();
 
         <div class="form">
             <div class="cabecalho-cadastro">
-				<h1>Cadastrar Administrador</h1>
+				<h1 class="title-aut">Cadastrar Administrador</h1>
                 <?php if (isset($success_message)) : ?>
-                    <p><?php echo $success_message; ?></p>
+                    <p class="autent-msg"><?php echo $success_message; ?></p>
                 <?php endif; ?>
                 <?php if (isset($error_message)) : ?>
-                    <p><?php echo $error_message; ?></p>
+                    <p class="autent-msg"><?php echo $error_message; ?></p>
                 <?php endif; ?>
 			</div>
             <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
@@ -70,6 +71,8 @@ $conn->close();
                     <input class="botao-enviar" type="submit" value="Cadastrar">
                 </div>
             </form>
+            
+        <button class="btn-revert">Já possui cadastro?</button>
         </div>
     </div>
 </body>

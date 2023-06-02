@@ -8,6 +8,6 @@ $_SESSION = array();
 session_destroy();
 
 // Redirecionar para a página de login ou para uma página de confirmação de logout
-header('Location: form_login.php');
+header('Location: cadastro.php');
 exit();
 ?>
