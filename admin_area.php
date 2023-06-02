@@ -7,28 +7,10 @@ require_once 'verify.php';
 $sql = "SELECT * FROM contato_msg";
 $result = $conn->query($sql);
 
-if ($result->num_rows > 0) {
-    // Exibir os dados da tabela
-    while ($row = $result->fetch_assoc()) {
-        // Acesso aos campos específicos da tabela
-        $idSolicitacao = $row['id'];
-        $nome = $row['nome'];
-        $assunto = $row['assunto'];
-        $email = $row['email'];
-        $msg = $row['mensagem'];
+$hasData = $result->num_rows > 0;
 
-        // Criar uma div para cada mensagem da tabela
-        echo "<div class='solicitacao'>";
-        echo "Solicitação " . $idSolicitacao . "<br>";
-        echo "Nome: " . $nome . "<br>";
-        echo "Assunto: " . $assunto . "<br>";
-        echo "Email: " . $email . "<br>";
-        echo "Mensagem: " . $msg . "<br>";
-        echo "</div>";
-    }
-} else {
-    echo "Nenhum dado encontrado na tabela.";
-}
+
+
 
 // Fechar a conexão com o banco de dados
 $conn->close();
@@ -41,9 +23,59 @@ $conn->close();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/admin_area.css">
     <title>Document</title>
 </head>
 <body>
-    <a href="logout.php"><button>Logout</button></a>
+    <header>
+
+    <div class="title-container">
+    <h1 class="title">Área de controle</h1>
+    </div>
+        
+    <div class="btn-container"><a href="logout.php"><button class="btn-logout">Logout</button></a></div>
+    </header>
+
+    <main>
+        <section class="container-exception">
+        <?php 
+        if(!$hasData){
+            echo "<div class='exception'><p>Nenhum dado encontrado na tabela</p></div>";
+            
+        } 
+        ?>
+        </section>
+
+        <section class="contatos-container">
+        
+        <?php
+        
+        if ($hasData) {
+            // Exibir os dados da tabela
+            while ($row = $result->fetch_assoc()) {
+                // Acesso aos campos específicos da tabela
+                $idSolicitacao = $row['id'];
+                $nome = $row['nome'];
+                $assunto = $row['assunto'];
+                $email = $row['email'];
+                $msg = $row['mensagem'];
+        
+                // Criar uma div para cada mensagem da tabela
+                echo "<div class='solicitacao'>";
+                echo "Solicitação " . $idSolicitacao . "<br>";
+                echo "Nome: " . $nome . "<br>";
+                echo "Assunto: " . $assunto . "<br>";
+                echo "Email: " . $email . "<br>";
+                echo "Mensagem: " . $msg . "<br>";
+                echo "</div>";
+        
+            }
+        }
+        ?>
+        </section>
+
+    </main>
+
 </body>
 </html>
