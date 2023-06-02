@@ -38,21 +38,39 @@ $conn->close();
 <html>
 <head>
     <title>Cadastro de Administrador</title>
+    <link rel="stylesheet" href="./css/cadastro.css">
 </head>
 <body>
-    <h1>Cadastro de Administrador</h1>
-    <?php if (isset($success_message)) : ?>
-        <p><?php echo $success_message; ?></p>
-    <?php endif; ?>
-    <?php if (isset($error_message)) : ?>
-        <p><?php echo $error_message; ?></p>
-    <?php endif; ?>
-    <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-        <label for="username">Nome de usuário:</label>
-        <input type="text" id="username" name="username" required><br>
-        <label for="password">Senha:</label>
-        <input type="password" id="password" name="password" required><br>
-        <input type="submit" value="Cadastrar">
-    </form>
+    <div class="container">
+        <div class="img-form">
+            <img src="./assets/cadastro-img.png" alt="Imagem ilustrativa de três pessoas conversando">
+        </div>
+
+        <div class="form">
+            <div class="cabecalho-cadastro">
+				<h1>Cadastrar Administrador</h1>
+                <?php if (isset($success_message)) : ?>
+                    <p><?php echo $success_message; ?></p>
+                <?php endif; ?>
+                <?php if (isset($error_message)) : ?>
+                    <p><?php echo $error_message; ?></p>
+                <?php endif; ?>
+			</div>
+            <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                <div class="input-grp">
+                    <div class="input-box">
+                        <label for="username">Nome de usuário:</label>
+                        <input type="text" id="username" name="username" required><br>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" name="password" required><br>
+                    </div>
+                    <input class="botao-enviar" type="submit" value="Cadastrar">
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
