@@ -44,6 +44,6 @@ $conn->close();
     <title>Document</title>
 </head>
 <body>
-    <a href="logout.php">Logout</a>
+    <a href="logout.php"><button>Logout</button></a>
 </body>
 </html>
