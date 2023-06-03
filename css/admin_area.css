@@ -1,13 +1,14 @@
 body{
-    background-color: #7C616C;
+    background-color: #4609a8d5;
     overflow-x: hidden;
+    font-weight: 200;
 }
 
 header{
     display: flex;
     align-items: center;
     height: 10vh;
-    background-color: #817E9F;
+    background-color: #e4e1e1;
     margin-bottom: 7vh;
 }
 
@@ -23,8 +24,8 @@ main{
 
 .title{
     width: fit-content;
-    color: white;
-    text-shadow: 2px 2px black;
+    color: #000000;
+    font-weight: 300;
 }
 
 .container-exception{
@@ -35,7 +36,7 @@ main{
 
 .exception{
     width: fit-content;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 .btn-container{

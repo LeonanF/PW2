@@ -3,7 +3,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #6431B6;
+    background-color: #4609a8d5;
 }
 
 form {
@@ -59,13 +59,18 @@ input[type="submit"] {
     margin-top: 16px;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #fff;
+    color: #FFF;
+    background-color: #4609a8d5;
+    transition: scale 0.2s linear;
 }
 
 input[type="submit"]:hover {
     scale: 1.1;
-    transition: all 0.2s linear;
-    background-color: #bdbdbd;  
+    filter: brightness(80%);
+}
+
+input[type="submit"]:active {
+    scale: 0.9;
 }
 
 @media (max-width: 928px) {
