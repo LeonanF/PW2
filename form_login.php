@@ -9,11 +9,6 @@ if (isset($_SESSION['admin_username'])) {
     exit();
 }
 
-//Verificar se houve erro de login
-if (isset($_GET['error']) && $_GET['error'] == 'login_required') {
-    $error_message = 'Você deve fazer login primeiro.';
-}
-
 // Verificar se o formulário foi submetido
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     

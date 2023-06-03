@@ -27,13 +27,14 @@ if(!onLogin){
         btnRev.innerHTML = 'Já possui cadastro?'
 }})
 
+if(btnLogin){
 btnLogin.addEventListener('click', ()=>{
     if(msgAutent)
     msgAutent.remove()
-    
+
     formTitle.innerHTML = 'Login Administrador'
     formButton.value = 'Login'
     form.action = 'form_login.php'
     onLogin = true
     btnRev.innerHTML = 'Não possui cadastro?'
-})
+})}

@@ -1,4 +1,10 @@
 <?php
+
+//Verificar se houve erro de login
+if (isset($_GET['error']) && $_GET['error'] == 'login_required') {
+    $error_message = 'Você deve fazer login primeiro.';
+}
+
 // Verificar se o formulário foi submetido
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
@@ -55,7 +61,7 @@ $conn->close();
                     <?php echo $success_message . " Deseja fazer <button class='btn-revert-2'>login</button>?"; ?>
                 <?php endif; ?>
                 <?php if (isset($error_message)) : ?>
-                    <?php echo $error_message; ?>
+                    <?php echo $error_message. " Deseja fazer <button class='btn-revert-2'>login</button>?"; ?>
                 <?php endif; ?>
                 </p>
 			</div>
