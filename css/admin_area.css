@@ -81,6 +81,10 @@ main{
     word-wrap: break-word;
 }
 
+.fieldsSolicit p{
+    margin-top: 20px;
+}
+
 .idSolicit{
     display: flex;
     align-items: center;
