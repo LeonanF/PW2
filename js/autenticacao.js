@@ -8,6 +8,7 @@ let onLogin = false
 
 btnRev.addEventListener('click', ()=>{
 
+    if(msgAutent)
     msgAutent.remove()
 
 if(!onLogin){
