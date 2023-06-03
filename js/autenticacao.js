@@ -19,7 +19,7 @@ if(!onLogin){
     btnRev.innerHTML = 'Não possui cadastro?'
 }
  else{
-        formTitle.innerHTML = 'Cadastro Administrador'
+        formTitle.innerHTML = 'Cadastrar Administrador'
         formButton.value = 'Cadastrar'
         form.action = 'cadastro.php'
         onLogin = false
