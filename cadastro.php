@@ -50,12 +50,14 @@ $conn->close();
         <div class="form">
             <div class="cabecalho-cadastro">
 				<h1 class="title-aut">Cadastrar Administrador</h1>
+                <p class="autent-msg">
                 <?php if (isset($success_message)) : ?>
-                    <p class="autent-msg"><?php echo $success_message; ?></p>
+                    <?php echo $success_message . " Deseja fazer <button class='btn-revert-2'>login</button>?"; ?>
                 <?php endif; ?>
                 <?php if (isset($error_message)) : ?>
-                    <p class="autent-msg"><?php echo $error_message; ?></p>
+                    <?php echo $error_message; ?>
                 <?php endif; ?>
+                </p>
 			</div>
             <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                 <div class="input-grp">

@@ -144,6 +144,22 @@ img {
     transform: scale(0.9);
 }
 
+.btn-revert-2{
+    cursor: pointer;
+    color: red;
+    border: none;
+    background-color: transparent;
+    font-size: inherit;
+}
+
+.btn-revert-2:hover{
+    border-bottom: 1px solid;
+}
+
+.btn-revert-2:active{
+    filter: brightness(60%);
+}
+
 @media screen and (max-width: 1336px) {
     .img-form {
         display: none;
