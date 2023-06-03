@@ -18,13 +18,14 @@ $conn->close();
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/admin_area.css">
+    <script src="./js/admin.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -63,12 +64,12 @@ $conn->close();
         
                 // Criar uma div para cada mensagem da tabela
                 echo "<div class='solicitacao'>";
-                echo "<p>Solicitação " . $idSolicitacao . "</p>";
-                echo "<p>Nome: " . $nome . "</p>";
+                echo "<div class='idSolicit'><p>Solicitação " . $idSolicitacao . "</p><span class='arrow'></span></div>";
+                echo "<div class='fieldsSolicit'><p>Nome: " . $nome . "</p>";
                 echo "<p>Assunto: " . $assunto . "</p>";
                 echo "<p>Email: " . $email . "</p>";
                 echo "<p>Mensagem: " . $msg . "</p>";
-                echo "</div>";
+                echo "</div></div>";
         
             }
         }

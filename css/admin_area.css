@@ -1,5 +1,7 @@
 body{
     background-color: #7C616C;
+    
+    overflow-x: hidden;
 }
 
 header{
@@ -60,6 +62,35 @@ main{
     filter: brightness(80%);
 }
 
-.solicitacao{
+.solicitacao {
+    cursor: pointer;
     display: flex;
+    flex-direction: column;
+    background-color: #7FC29B;
+    width: fit-content;
+    width: 30%;
+    padding: 20px;
+    margin: 2vh 0 0 2vw;
+    border-radius: 7px;
 }
+
+
+.fieldsSolicit {
+    flex-direction: column;
+    display: none;
+    word-wrap: break-word;
+}
+
+.idSolicit{
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #888 transparent transparent transparent;
+    margin-left: 1vw;
+  }
