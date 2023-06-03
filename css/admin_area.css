@@ -7,8 +7,8 @@ body{
 header{
     display: flex;
     align-items: center;
-    height: 10vh;
-    background-color: #e4e1e1;
+    height: 8vh;
+    background-color: #FFF;
     margin-bottom: 7vh;
 }
 
