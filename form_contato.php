@@ -43,8 +43,12 @@ $conn->close();
 ?>
 
 <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
-    <label for="nome">Nome</label>
-    <input type="text" id="nome" name="nome" required>
+    <div class="imagem">
+        <img src="./assets/atendentes.png" alt="desenho de atendentes">
+    </div>
+    
+    <label for="nome">Nome completo</label>
+    <input type="text" id="nome" name="nome" placeholder="ex: Anderson Serra da Costa" required>
 
     <label for="assunto">Assunto</label>
     <select name="assunto" id="assunto" required>
@@ -56,10 +60,10 @@ $conn->close();
     </select>
 
     <label for="email">E-mail</label>
-    <input type="email" id="email" name="email" required>
+    <input type="email" id="email" name="email" placeholder="ex: gutierrez@gmail.com" required>
 
     <label for="msg">Mensagem</label>
-    <textarea id="msg" name="msg" rows="5" style="resize: none;" required></textarea>
+    <textarea id="msg" name="msg" rows="5" style="resize: none;" placeholder="Descreva o seu problema" required></textarea>
 
     <input type="submit" value="Enviar">
 </form>
