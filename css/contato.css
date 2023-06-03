@@ -39,13 +39,19 @@ textarea {
     padding: 8px 10px;
     border-radius: 8px;
     box-shadow: 1px 1px 6px #0000001c;
+    transition: background 0.2s linear;
 }
 
 input:hover,
 select:hover, 
 textarea:hover {
     background-color: #d8d7d7;
-    transition: all 0.2s linear;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible{
+    outline: 1px solid #6c63ff;
 }
 
 textarea {

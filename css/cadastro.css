@@ -123,6 +123,7 @@ img {
     padding: 10px;
     border: none;
     border-radius: 7px;
+    margin-top: 1.5vh;
     color: white;
     background: #6c63ff;
     transition: transform 0.3s linear;
