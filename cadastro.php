@@ -45,6 +45,7 @@ $conn->close();
 <head>
     <title>Cadastro de Administrador</title>
     <link rel="stylesheet" href="./css/cadastro.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <script src="./js/autenticacao.js" defer></script>
 </head>
 <body>
