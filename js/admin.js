@@ -8,8 +8,10 @@ solicitacoes.forEach(solicitacao => {
 
         if (solicitStyle === 'none') {
             camposSolicit.style.display = 'flex';
+            arrow.style.transform = 'rotate(180deg)'
         } else {
             camposSolicit.style.display = 'none';
+            arrow.style.transform = 'rotate(0)'
         }
     });
 });
