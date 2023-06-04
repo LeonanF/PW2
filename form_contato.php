@@ -34,9 +34,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["nome"]) && isset($_POS
     }
 }
 
-if (isset($_GET["success"]) && $_GET["success"] == 1) {
-    echo "<p class='confirm'>Dados inseridos com sucesso!</p>";
-}
 
 
 // Fecha a conexão com o banco de dados
@@ -48,6 +45,12 @@ $conn->close();
         <img src="./assets/atendentes.png" alt="desenho de atendentes">
     </div>
     
+    <?php
+    if (isset($_GET["success"]) && $_GET["success"] == 1) {
+    echo "<p class='confirm'>Dados inseridos com sucesso!</p>";
+}
+?>
+
     <label for="nome">Nome completo</label>
     <input type="text" id="nome" name="nome" placeholder="ex: Anderson Serra da Costa" required>
 
@@ -67,6 +70,9 @@ $conn->close();
     <textarea id="msg" name="msg" rows="5" style="resize: none;" placeholder="Descreva o seu problema" required></textarea>
 
     <input type="submit" value="Enviar">
+
+    
+
 </form>
 </body>
 </html>

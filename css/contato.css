@@ -26,6 +26,10 @@ form {
     width: 100%;
 }
 
+.confirm{
+    margin: 0 auto;
+}
+
 label {
     font-size: 0.75rem;
     margin: 8px 0px;
