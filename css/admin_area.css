@@ -12,10 +12,6 @@ header{
     margin-bottom: 7vh;
 }
 
-main{
-    color: #E5E9EC;
-}
-
 .title-container{
     display: flex;
     justify-content: center;
@@ -72,6 +68,7 @@ main{
     display: flex;
     flex-direction: column;
     background-color: #6c63ff;
+    color: #FFF;
     width: 100%;
     padding: 20px;
     border-radius: 7px;
@@ -99,6 +96,6 @@ main{
     height: 0;
     border-style: solid;
     border-width: 5px 5px 0 5px;
-    border-color: #888 transparent transparent transparent;
+    border-color: #FFF transparent transparent transparent;
     margin-left: 1vw;
   }
