@@ -1,0 +1,49 @@
+ul {
+    align-items: center;
+    display: flex;
+    
+    gap: 1rem;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+
+.menu {
+    background-color: #fff;
+    height: 8rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem;
+}
+
+main {
+    background-color: blueviolet;
+    height: 30rem;
+}
+
+.paragrafo-img {
+    height: 15rem;
+    border: 1px solid red;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5rem;
+    margin: 5rem;
+    border-radius: 5px;
+}
+
+.paragrafo-img img {
+    height: 10rem;
+    padding-right: 5rem;
+}
+
+footer {
+    color: #777;
+    padding: 3rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
