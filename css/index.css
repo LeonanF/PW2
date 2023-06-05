@@ -40,6 +40,14 @@ main {
     padding-right: 5rem;
 }
 
+.paragrafo2 {
+    flex-direction: row-reverse;
+}
+
+.paragrafo2 img {
+    padding-left: 5rem;
+}
+
 footer {
     color: #777;
     padding: 3rem;
