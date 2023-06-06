@@ -7,6 +7,8 @@ ul {
 
 ul li a{
     text-decoration: none;
+    color: #001c7d;
+    font-weight: 550;
 }
 
 
@@ -19,20 +21,35 @@ ul li a{
 }
 
 main {
-    background-color: blueviolet;
+    border: 1px red solid;
     height: 30rem;
+}
+
+main h1{
+    font-size: large;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #001c7d;
 }
 
 .paragrafo-img {
     height: 15rem;
-    border: 1px solid red;
+    background-color: #001c7d;
+    color: #fff;
     display: flex;
-    text-align: center;
     align-items: center;
     justify-content: space-around;
     padding: 1.5rem;
     margin: 5rem;
-    border-radius: 5px;
+    border-radius: 9px;
+    text-align: justify;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+
+.paragrafo-img a:visited {
+    color: #fff;
 }
 
 .paragrafo-img img {
