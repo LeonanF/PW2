@@ -5,6 +5,11 @@ if (isset($_GET['error']) && $_GET['error'] == 'login_required') {
     $error_message = 'Você deve fazer login primeiro.';
 }
 
+//Verificar se dados foram inseridos errados
+if (isset($_GET['error']) && $_GET['error'] == 'not_match') {
+    $error_message = 'O usuário ou senha inserido está incorreto.<br>Por favor, verifique os dados ou se cadastre.';
+}
+
 // Verificar se o formulário foi submetido
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     

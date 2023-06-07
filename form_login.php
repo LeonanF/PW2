@@ -36,9 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     
-
-    // Credenciais inválidas, exibir mensagem de erro
-    $error_message = 'Nome de usuário ou senha incorretos.';
+    header('Location: cadastro.php?error=not_match');
 
     // Fechar a conexão com o banco de dados
     $conn->close();
