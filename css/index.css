@@ -1,29 +1,48 @@
-ul {
-    align-items: center;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+}
+
+.div-flex-horizontal {
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+}
+
+.div-flex-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Estilizações do header */
+header {
+    height: 8rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem;
+    background-color: #fff;
+}
+
+ul {
     gap: 1rem;
 }
 
 ul li a{
     text-decoration: none;
-    color: #001c7d;
     font-weight: 550;
+    color: #001c7d;
 }
 
-
-.menu {
-    background-color: #fff;
-    height: 8rem;
-    display: flex;
-    justify-content: space-around;
-    padding: 1.5rem;
-}
-
-main {
-    border: 1px red solid;
-    height: 30rem;
-}
+/* Estilizações da main */
 
 main h1{
     font-size: large;
@@ -32,6 +51,62 @@ main h1{
     align-items: center;
     flex-direction: column;
     color: #001c7d;
+}
+
+.sec-slider {
+    height: calc(100vh - 128px);
+    background-color: red;
+}
+
+.slider {
+    height: inherit;
+    width: 300vw;
+}
+
+.slide {
+    height: inherit;
+    width: 100vw;
+}
+
+.slide:first-child {
+    background-color: red;
+}
+
+.slide:nth-child(2) {
+    background-color: green;
+}
+
+.slide:last-child {
+    background-color: purple;
+}
+
+.setas-slide {
+    width: 98vw;
+    justify-content: space-between;
+    transform: translateY(-455%);
+    padding: 10px;
+}
+
+.setas-slide i {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.botoes-slide {
+    width: 100vw;
+    transform: translateY(-271%);
+    padding: 10px;
+}
+
+.botao-slide {
+    height: 15px;
+    width: 15px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+}
+
+.botao-slide:not(:last-child) {
+    margin-right: 20px;
 }
 
 .paragrafo-img {
