@@ -1,3 +1,4 @@
+/* 1. Estilizações gerais */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -23,9 +24,9 @@ body {
     overflow-x: hidden;
 }
 
-/* Estilizações do header */
+/* 2. Estilizações do header */
 header {
-    height: 8rem;
+    height: 7rem;
     display: flex;
     justify-content: space-around;
     padding: 1.5rem;
@@ -42,7 +43,7 @@ ul li a{
     color: #001c7d;
 }
 
-/* Estilizações da main */
+/* 3. Estilizações da main */
 
 main h1{
     font-size: large;
@@ -53,8 +54,9 @@ main h1{
     color: #001c7d;
 }
 
+/* 3.1 section slider */
 .sec-slider {
-    height: calc(100vh - 128px);
+    height: calc(100vh - 7rem);
     background-color: red;
 }
 
@@ -66,18 +68,6 @@ main h1{
 .slide {
     height: inherit;
     width: 100vw;
-}
-
-.slide:first-child {
-    background-color: red;
-}
-
-.slide:nth-child(2) {
-    background-color: green;
-}
-
-.slide:last-child {
-    background-color: purple;
 }
 
 .setas-slide {
@@ -103,14 +93,16 @@ main h1{
     width: 15px;
     border: 2px solid #fff;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .botao-slide:not(:last-child) {
     margin-right: 20px;
 }
 
+/* 3.1 section conteúdo */
 .paragrafo-img {
-    height: 15rem;
+    height: max-content;
     background-color: #001c7d;
     color: #fff;
     display: flex;
@@ -140,6 +132,7 @@ main h1{
     padding-left: 5rem;
 }
 
+/* 4.0 estilizações do footer */
 footer {
     color: #777;
     padding: 3rem;

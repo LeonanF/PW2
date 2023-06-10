@@ -7,7 +7,7 @@ const botoes = document.querySelectorAll('.botao-slide');
 let moveSlider = 0
 
 // Cores padrão dos elementos do slider
-setaEsquerda.style.color = '#ccc'
+setaEsquerda.style.color = '#fff0'
 botoes[0].style.backgroundColor = '#fff'
 
 // Muda a cor dos botões do slider
@@ -21,6 +21,21 @@ function ativaBotao(valor) {
     }
 }
 
+// Oculta as setas do slider
+function someSeta(valor) {
+    if(valor == 0) {
+        setaEsquerda.style.color = '#fff0'
+    } else {
+        setaEsquerda.style.color = '#000'
+    } 
+    
+    if(valor == -200) {
+        setaDireita.style.color = '#fff0'
+    } else {
+        setaDireita.style.color = '#000'
+    }
+}
+
 // Funções para mudar os slides
 setaEsquerda.addEventListener('click', ()=> {
     if(moveSlider < 0) {
@@ -29,10 +44,7 @@ setaEsquerda.addEventListener('click', ()=> {
         setaDireita.style.color = '#000'
     }
 
-    if(moveSlider == 0) {
-        setaEsquerda.style.color = '#ccc'
-    }
-
+    someSeta(moveSlider)
     ativaBotao(moveSlider)
 })
 
@@ -43,10 +55,22 @@ setaDireita.addEventListener('click', ()=> {
         setaEsquerda.style.color = '#000'
     } 
 
-    if(moveSlider == -200) {
-        setaDireita.style.color = '#ccc'
-    }
-
+    someSeta(moveSlider)
     ativaBotao(moveSlider)
 })
 
+for(let i = 0; i < botoes.length; i++) {
+    botoes[i].addEventListener('click', () => {
+        if(i == 0) {
+            moveSlider = 0;
+        } else {
+            moveSlider = i*(-100);
+        }
+        
+        console.log(moveSlider)
+        slider.style.marginLeft = moveSlider + 'vw'
+        
+        someSeta(moveSlider)
+        ativaBotao(moveSlider)
+    })
+}
