@@ -43,6 +43,10 @@ ul li a{
     color: #001c7d;
 }
 
+header a img {
+    height: 5rem;
+}
+
 /* 3. Estilizações da main */
 
 main h1{
