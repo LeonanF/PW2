@@ -1,0 +1,72 @@
+/* 1. Estilizações gerais */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+}
+
+.div-flex-horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-flex-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* 2. Estilizações do header */
+header {
+    height: 7rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem;
+    background-color: #fff;
+}
+
+ul {
+    gap: 1rem;
+}
+
+ul li a{
+    text-decoration: none;
+    font-weight: 550;
+    color: #001c7d;
+}
+
+header a img {
+    height: 5rem;
+}
+
+/* 3 - Estilização das Box */
+
+.estrutura-curso {
+    border: red 1px solid;
+    padding: 2.5rem;
+    margin: 2rem;
+    gap: 2rem;
+}
+
+.estrutura-curso h2{
+    padding: 1rem;
+    font-weight: 600;
+}
+
+.estrutura-curso h4{
+    padding: 2rem;
+}
+
+.box-semestre {
+    border: 1px red solid;
+    padding: 2rem;
+    margin: 2rem;
+}
