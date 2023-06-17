@@ -26,10 +26,12 @@ body {
 
 /* 2. Estilizações do header */
 header {
-    height: 15%;
+    height: 100px;
     display: flex;
     justify-content: space-around;
-    padding: 1.5rem;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 1px 1px 10px #2c2c2c;
     background-color: #fff;
 }
 
@@ -37,14 +39,24 @@ ul {
     gap: 1rem;
 }
 
-ul li a{
+ul li a {
     text-decoration: none;
     font-weight: 550;
     color: #001c7d;
 }
 
-header a img {
-    height: 5rem;
+.logo {
+    height: 70px;
+    width: 70px;
+}
+
+.logo a {
+    width: inherit;
+    height: inherit;
+}
+
+.logo img {
+    width: 100%;
 }
 
 .style-login {
@@ -53,7 +65,6 @@ header a img {
     padding: 0.8rem;
     border-radius: 1rem;
 }
-
 
 /* 3. Estilizações da main */
 
@@ -68,8 +79,8 @@ main h1{
 
 /* 3.1 section slider */
 .sec-slider {
-    height: calc(100vh - 7rem);
-    background-color: red;
+    height: calc(100vh - 100px);
+    background-color: #fff;
 }
 
 .slider {
@@ -78,19 +89,29 @@ main h1{
 }
 
 .slide {
+    display: flex;
+    justify-content: center;
     height: inherit;
     width: 100vw;
+}
+
+.slide img {
+    width: 95%;
+    height: 100%;
+    border-radius: 20px;
+    filter: brightness(70%);
 }
 
 .setas-slide {
     width: 98vw;
     justify-content: space-between;
     transform: translateY(-455%);
-    padding: 10px;
+    padding: 10px 50px 10px 65px;
 }
 
 .setas-slide i {
     font-size: 40px;
+    color: #fff;
     cursor: pointer;
 }
 
@@ -113,6 +134,12 @@ main h1{
 }
 
 /* 3.1 section conteúdo */
+h2 {
+    margin: 1rem;
+    text-align: center;
+    color: #001c7d;
+}
+
 .paragrafo-img {
     height: max-content;
     background-color: #001c7d;
@@ -121,7 +148,7 @@ main h1{
     align-items: center;
     justify-content: space-around;
     padding: 1.5rem;
-    margin: 5rem;
+    margin: 1rem 5rem 2rem 5rem;
     border-radius: 9px;
     text-align: justify;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);

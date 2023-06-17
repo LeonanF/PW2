@@ -1,9 +1,72 @@
-body {
-    height: 100vh;
+/* 1. Estilizações gerais */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+}
+
+.div-flex-horizontal {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #4609a8d5;
+}
+
+.div-flex-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #001C7D;
+}
+
+/* 2. Estilizações do header */
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 1px 1px 10px #2c2c2c;
+    background-color: #fff;
+}
+
+ul {
+    gap: 1rem;
+}
+
+ul li a {
+    text-decoration: none;
+    font-weight: 550;
+    color: #001c7d;
+}
+
+.logo {
+    height: 70px;
+    width: 70px;
+}
+
+.logo a {
+    width: inherit;
+    height: inherit;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.style-login {
+    text-decoration: underline;
+    border: 0.1rem solid rgb(220, 220, 220);
+    padding: 0.8rem;
+    border-radius: 1rem;
 }
 
 form {
@@ -43,7 +106,7 @@ textarea {
     padding: 8px 10px;
     border-radius: 8px;
     box-shadow: 1px 1px 6px #0000001c;
-    transition: background 0.2s linear;
+    transition: all 0.2s linear;
 }
 
 input:hover,
@@ -70,7 +133,7 @@ input[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
     color: #FFF;
-    background-color: #4609a8d5;
+    background-color: #001C7D;
     transition: scale 0.2s linear;
 }
 
@@ -81,6 +144,15 @@ input[type="submit"]:hover {
 
 input[type="submit"]:active {
     scale: 0.9;
+}
+
+/* 4.0 estilizações do footer */
+footer {
+    color: #777;
+    padding: 3rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 @media (max-width: 928px) {

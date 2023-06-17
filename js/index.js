@@ -26,13 +26,13 @@ function someSeta(valor) {
     if(valor == 0) {
         setaEsquerda.style.color = '#fff0'
     } else {
-        setaEsquerda.style.color = '#000'
+        setaEsquerda.style.color = '#fff'
     } 
     
     if(valor == -200) {
         setaDireita.style.color = '#fff0'
     } else {
-        setaDireita.style.color = '#000'
+        setaDireita.style.color = '#fff'
     }
 }
 
@@ -41,7 +41,7 @@ setaEsquerda.addEventListener('click', ()=> {
     if(moveSlider < 0) {
         moveSlider += 100;
         slider.style.marginLeft = moveSlider + 'vw'
-        setaDireita.style.color = '#000'
+        setaDireita.style.color = '#fff'
     }
 
     someSeta(moveSlider)
@@ -52,7 +52,7 @@ setaDireita.addEventListener('click', ()=> {
     if(moveSlider > -200) {
         moveSlider -= 100;
         slider.style.marginLeft = moveSlider + 'vw'
-        setaEsquerda.style.color = '#000'
+        setaEsquerda.style.color = '#fff'
     } 
 
     someSeta(moveSlider)
