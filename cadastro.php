@@ -102,6 +102,18 @@ $conn->close();
             </form>
             
         <button class="btn-revert">Já possui cadastro?</button>
+
+        <?php if(isset($_GET['logout']) && $_GET['logout'] == 'successful'):?>
+            <script>
+                if (document.readyState === "complete") {
+                    document.querySelector('.btn-revert').click()
+                } else {
+                    document.addEventListener("DOMContentLoaded", ()=>{
+                        document.querySelector('.btn-revert').click()
+                    })
+                }
+            </script>
+        <?php endif;?>
         </div>
     </div>
 

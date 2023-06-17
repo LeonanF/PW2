@@ -30,15 +30,15 @@ $conn->close();
 </head>
 <body>
     <header>
-
-    <div class="title-container">
-    <h1 class="title">Área de controle</h1>
-    </div>
-        
+    <div class="logo"><img src="./assets/brasaouepa-removebg-preview (1).png" alt="Emblema da UEPA"></div>
     <div class="btn-container"><a href="logout.php"><button class="btn-logout">Logout</button></a></div>
     </header>
 
     <main>
+
+    <div class="title-container">
+        <h1 class="title">Área de controle</h1>
+    </div>
         <section class="container-exception">
         <?php 
         if(!$hasData){
@@ -77,6 +77,10 @@ $conn->close();
         </section>
 
     </main>
+
+    <footer>
+        &copy; Copyright João Manoel | Leonan Freitas | Lucas Vinicius
+    </footer>
 
 </body>
 </html>
