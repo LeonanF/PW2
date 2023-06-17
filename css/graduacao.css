@@ -47,6 +47,13 @@ header a img {
     height: 5rem;
 }
 
+.style-login {
+    text-decoration: underline;
+    border: 0.1rem solid rgb(220, 220, 220);
+    padding: 0.8rem;
+    border-radius: 1rem;
+}
+
 /* 3 - Estilização das Box */
 
 .estrutura-curso {
@@ -69,4 +76,13 @@ header a img {
     border: 1px red solid;
     padding: 2rem;
     margin: 2rem;
+}
+
+/* 4.0 estilizações do footer */
+footer {
+    color: #777;
+    padding: 3rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }

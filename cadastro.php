@@ -54,9 +54,24 @@ $conn->close();
     <script src="./js/autenticacao.js" defer></script>
 </head>
 <body>
+
+    <header>
+        <a href="index.html"><img src="./assets/brasaouepa-removebg-preview (1).png" alt="Emblema da UEPA"></a>
+
+        <nav class="div-flex-horizontal">
+            <ul class="div-flex-horizontal">
+                <li><a href="./graduacao.html">Graduação</a></li>
+                <li><a href="">Campus</a></li>
+                <li><a href="">Fale Conosco</a></li>
+                <li><a href="">Contato</a></li>
+                <li><a class="style-login" href="./cadastro.php">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="container">
         <div class="img-form">
-            <img src="./assets/cadastro-img.png" alt="Imagem ilustrativa de três pessoas conversando">
+            <img class="img-container" src="./assets/brasaouepa-removebg-preview (1).png" alt="Imagem ilustrativa de três pessoas conversando">
         </div>
 
         <div class="form">
@@ -89,5 +104,9 @@ $conn->close();
         <button class="btn-revert">Já possui cadastro?</button>
         </div>
     </div>
+
+    <footer>
+        &copy; Copyright João Manoel | Leonan Freitas | Lucas Vinicius
+    </footer>
 </body>
 </html>

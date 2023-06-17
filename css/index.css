@@ -26,7 +26,7 @@ body {
 
 /* 2. Estilizações do header */
 header {
-    height: 7rem;
+    height: 15%;
     display: flex;
     justify-content: space-around;
     padding: 1.5rem;
@@ -46,6 +46,14 @@ ul li a{
 header a img {
     height: 5rem;
 }
+
+.style-login {
+    text-decoration: underline;
+    border: 0.1rem solid rgb(220, 220, 220);
+    padding: 0.8rem;
+    border-radius: 1rem;
+}
+
 
 /* 3. Estilizações da main */
 
