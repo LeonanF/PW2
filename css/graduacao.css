@@ -45,7 +45,7 @@
 .professor p {
     border: 1px solid rgb(157, 157, 157);
     margin: 5%;
-    padding: 1%;
+    padding: 1.5%;
     background-color: #001c7d;
     color: #fff;
     border-radius: 1%;
@@ -54,4 +54,8 @@
 .corpo-docente h3 {
     margin-top: 3%;
     text-decoration: underline;
+}
+
+.professor img {
+    width: 30%;
 }
