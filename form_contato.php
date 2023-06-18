@@ -45,7 +45,7 @@
         $tablename = "contato_msg"; // Nome da tabela
 
         // Processa os dados do formulário somente se o formulário for enviado
-        if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["nome"]) && isset($_POST["assunto"]) && isset($_POST["email"]) && isset($_POST["msg"])) {
+        if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST["nome"]) && !empty($_POST["assunto"]) && !empty($_POST["email"]) && !empty($_POST["msg"])){
             $nome = $_POST["nome"];
             $assunto = $_POST["assunto"];
             $email = $_POST["email"];
@@ -59,6 +59,8 @@
             } else {
                 echo "Erro ao inserir os dados: " . $conn->error;
             }
+        } else {
+            $emptyError = "Todos os dados precisam estar preenchidos!";
         }
 
         // Fecha a conexão com o banco de dados
@@ -73,6 +75,8 @@
             <?php
             if (isset($_GET["success"]) && $_GET["success"] == 1) {
             echo "<p class='confirm'>Dados inseridos com sucesso!</p>";
+        } else{
+            echo "<p class='confirm'>".$emptyError."</p>";
         }
         ?>
 
