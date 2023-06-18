@@ -1,8 +1,6 @@
 .estrutura-curso {
     background-color: #001c7d;
     padding: 2.5rem;
-    margin: 2rem;
-    gap: 2rem;
     color: #fff;
     width: 100%;
 }
@@ -25,6 +23,12 @@
     color: #000;
 }
 
+.semestre{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
 .professor {
     border: 1px solid rgb(157, 157, 157);
     border-radius: 0.5%;
@@ -40,6 +44,14 @@
 
 .corpo-docente {
     display: contents;
+}
+
+.professor, .professor img{
+    border-radius: 10px;
+}
+
+.corpo-docente h2{
+    margin-top: 2rem    ;
 }
 
 .professor p {

@@ -45,7 +45,8 @@
         $tablename = "contato_msg"; // Nome da tabela
 
         // Processa os dados do formulário somente se o formulário for enviado
-        if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($_POST["nome"]) && !empty($_POST["assunto"]) && !empty($_POST["email"]) && !empty($_POST["msg"])){
+        if ($_SERVER["REQUEST_METHOD"] == "POST"){
+        if(!empty($_POST["nome"]) && !empty($_POST["assunto"]) && !empty($_POST["email"]) && !empty($_POST["msg"])){
             $nome = $_POST["nome"];
             $assunto = $_POST["assunto"];
             $email = $_POST["email"];
@@ -61,7 +62,7 @@
             }
         } else {
             $emptyError = "Todos os dados precisam estar preenchidos!";
-        }
+        }}
 
         // Fecha a conexão com o banco de dados
         $conn->close();
@@ -76,15 +77,16 @@
             if (isset($_GET["success"]) && $_GET["success"] == 1) {
             echo "<p class='confirm'>Dados inseridos com sucesso!</p>";
         } else{
+            if(isset($emptyError)){
             echo "<p class='confirm'>".$emptyError."</p>";
-        }
+        }}
         ?>
 
             <label for="nome">Nome completo</label>
-            <input type="text" id="nome" name="nome" placeholder="ex: Anderson Serra da Costa" required>
+            <input type="text" id="nome" name="nome" placeholder="ex: Anderson Serra da Costa">
 
             <label for="assunto">Assunto</label>
-            <select name="assunto" id="assunto" required>
+            <select name="assunto" id="assunto">
                 <option value=""></option>
                 <option value="Diretoria do curso">Diretoria do curso</option>
                 <option value="Protocolo">Protocolo</option>
@@ -93,10 +95,10 @@
             </select>
 
             <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" placeholder="ex: gutierrez@gmail.com" required>
+            <input type="email" id="email" name="email" placeholder="ex: gutierrez@gmail.com">
 
             <label for="msg">Mensagem</label>
-            <textarea id="msg" name="msg" rows="5" style="resize: none;" placeholder="Descreva o seu problema" required></textarea>
+            <textarea id="msg" name="msg" rows="5" style="resize: none;" placeholder="Descreva o seu problema"></textarea>
 
             <input type="submit" value="Enviar">
         </form>

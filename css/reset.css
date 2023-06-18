@@ -10,6 +10,11 @@
     list-style: none;
 }
 
+a{
+    color: red;
+}
+
+
 .div-flex-horizontal {
     display: flex;
     justify-content: center;
