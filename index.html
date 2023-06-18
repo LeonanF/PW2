@@ -23,7 +23,7 @@
 
             <ul class="div-flex-horizontal">
                 <li><a href="./graduacao.html">Graduação</a></li>
-                <li><a href="">Campus</a></li>
+                <li><a href="./avaliacao.html">Sistema de Avaliação</a></li>
                 <li><a href="./form_contato.php">Fale Conosco</a></li>
                 <li><a href="">Contato</a></li>
                 <li><a class="style-login" href="./cadastro.php">Login</a></li>

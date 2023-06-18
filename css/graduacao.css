@@ -1,8 +1,10 @@
 .estrutura-curso {
-    border: red 1px solid;
+    background-color: #001c7d;
     padding: 2.5rem;
     margin: 2rem;
     gap: 2rem;
+    color: #fff;
+    width: 100%;
 }
 
 .estrutura-curso h2{
@@ -15,7 +17,41 @@
 }
 
 .box-semestre {
-    border: 1px red solid;
+    border: 1px rgb(171, 167, 167) solid;
     padding: 2rem;
     margin: 2rem;
+    border-radius: 1vh;
+    background-color: #fff;
+    color: #000;
+}
+
+.professor {
+    border: 1px solid rgb(157, 157, 157);
+    border-radius: 0.5%;
+    background-color: #001c7d;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5%;
+    padding: 3%;
+    gap: 5%;
+    width: 85%;
+}
+
+.corpo-docente {
+    display: contents;
+}
+
+.professor p {
+    border: 1px solid rgb(157, 157, 157);
+    margin: 5%;
+    padding: 1%;
+    background-color: #001c7d;
+    color: #fff;
+    border-radius: 1%;
+}
+
+.corpo-docente h3 {
+    margin-top: 3%;
+    text-decoration: underline;
 }
