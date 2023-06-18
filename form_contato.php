@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ciência de dados</title>
     <link rel="stylesheet" href="./css/contato.css">
     <link rel="stylesheet" href="./css/reset.css">
 </head>
@@ -100,7 +100,18 @@
 
             <input type="submit" value="Enviar">
         </form>
+
     </main>
+
+    <section class="div-flex-vertical">
+        <p>CONTATOS OFICIAS: </p>
+        <div class="redes-sociais">
+            <a href="https://www.instagram.com/uepaoficial/"><img src="./assets/icons8-instagram.svg" alt="logo instagram"></a>
+            <a href="https://www.facebook.com/UepaOficial"><img src="./assets/icons8-facebook.svg" alt="logo facebook"></a>
+            <a href="https://twitter.com/uepaoficial"><img src="./assets/icons8-twitter.svg" alt="logo twitter"></a>
+            <a href="https://www.uepa.br"><img src="./assets/brasaouepa-removebg-preview (1).png" alt=""></a>
+        </div>
+    </section>
 
     <footer>
             &copy; Copyright João Manoel | Leonan Freitas | Lucas Vinicius
