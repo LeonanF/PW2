@@ -86,10 +86,10 @@
             <label for="assunto">Assunto</label>
             <select name="assunto" id="assunto" required>
                 <option value=""></option>
-                <option value="A">A</option>
-                <option value="B">B</option>
-                <option value="C">C</option>
-                <option value="D">D</option>
+                <option value="Diretoria do curso">Diretoria do curso</option>
+                <option value="Protocolo">Protocolo</option>
+                <option value="Diretoria pedagogica">Diretoria pedagógica</option>
+                <option value="Outros">Outros</option>
             </select>
 
             <label for="email">E-mail</label>
