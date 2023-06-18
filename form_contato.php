@@ -78,7 +78,7 @@
             echo "<p class='confirm'>Dados inseridos com sucesso!</p>";
         } else{
             if(isset($emptyError)){
-            echo "<p class='confirm'>".$emptyError."</p>";
+            echo "<p class='confirm errorMsg'>".$emptyError."</p>";
         }}
         ?>
 

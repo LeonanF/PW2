@@ -69,6 +69,12 @@ form {
 
 .confirm{
     margin: 0 auto;
+    font-weight: 600;
+    color: green;
+}
+
+.errorMsg{
+    color: red;
 }
 
 label {
