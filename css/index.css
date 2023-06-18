@@ -7,66 +7,9 @@
     text-decoration: none;
 }
 
-.div-flex-horizontal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.div-flex-vertical {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 body {
     overflow-x: hidden;
 }
-
-/* 2. Estilizações do header */
-header {
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-    box-shadow: 1px 1px 10px #2c2c2c;
-    background-color: #fff;
-}
-
-ul {
-    gap: 1rem;
-}
-
-ul li a {
-    text-decoration: none;
-    font-weight: 550;
-    color: #001c7d;
-}
-
-.logo {
-    height: 70px;
-    width: 70px;
-}
-
-.logo a {
-    width: inherit;
-    height: inherit;
-}
-
-.logo img {
-    width: 100%;
-}
-
-.style-login {
-    text-decoration: underline;
-    border: 0.1rem solid rgb(220, 220, 220);
-    padding: 0.8rem;
-    border-radius: 1rem;
-}
-
-/* 3. Estilizações da main */
 
 main h1{
     font-size: large;
@@ -77,7 +20,6 @@ main h1{
     color: #001c7d;
 }
 
-/* 3.1 section slider */
 .sec-slider {
     height: calc(100vh - 100px);
     background-color: #fff;
@@ -169,13 +111,4 @@ h2 {
 
 .paragrafo2 img {
     padding-left: 5rem;
-}
-
-/* 4.0 estilizações do footer */
-footer {
-    color: #777;
-    padding: 3rem;
-    align-items: center;
-    display: flex;
-    justify-content: center;
 }

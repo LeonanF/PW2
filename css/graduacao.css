@@ -1,61 +1,3 @@
-/* 1. Estilizações gerais */
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    border: 0;
-    text-decoration: none;
-}
-
-.div-flex-horizontal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.div-flex-vertical {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-body {
-    overflow-x: hidden;
-}
-
-/* 2. Estilizações do header */
-header {
-    height: 7rem;
-    display: flex;
-    justify-content: space-around;
-    padding: 1.5rem;
-    background-color: #fff;
-}
-
-ul {
-    gap: 1rem;
-}
-
-ul li a{
-    text-decoration: none;
-    font-weight: 550;
-    color: #001c7d;
-}
-
-header a img {
-    height: 5rem;
-}
-
-.style-login {
-    text-decoration: underline;
-    border: 0.1rem solid rgb(220, 220, 220);
-    padding: 0.8rem;
-    border-radius: 1rem;
-}
-
-/* 3 - Estilização das Box */
-
 .estrutura-curso {
     border: red 1px solid;
     padding: 2.5rem;
@@ -76,13 +18,4 @@ header a img {
     border: 1px red solid;
     padding: 2rem;
     margin: 2rem;
-}
-
-/* 4.0 estilizações do footer */
-footer {
-    color: #777;
-    padding: 3rem;
-    align-items: center;
-    display: flex;
-    justify-content: center;
 }
