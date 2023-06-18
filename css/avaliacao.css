@@ -1,0 +1,40 @@
+main {
+    width: 80vw;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    text-align: justify;
+    margin: 20px 0px;
+}
+
+#tabela-notas {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+#tabela-notas th,
+#tabela-notas td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#tabela-notas th {
+    background-color: #001c7d;
+    color: #fff;
+}
+
+#tabela-notas tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#tabela-notas tbody tr:hover {
+    background-color: #ddd;
+}
+  
