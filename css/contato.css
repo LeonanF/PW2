@@ -143,6 +143,10 @@ section {
     width: 50px;
 }
 
+footer {
+    color: #fff;
+}
+
 @media (max-width: 928px) {
    form {
        width: 80vw;
