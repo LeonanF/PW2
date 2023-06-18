@@ -56,17 +56,31 @@ $conn->close();
 <body>
 
     <header>
-        <a href="index.html"><img src="./assets/brasaouepa-removebg-preview (1).png" alt="Emblema da UEPA"></a>
+        <div class="logo">
+            <a href="index.html">
+                <img src="./assets/brasaouepa-removebg-preview (1).png" alt="Emblema da UEPA">
+            </a>
+        </div>
 
-        <nav class="div-flex-horizontal">
+        <nav>
+            <div class="fechar-menu">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+
             <ul class="div-flex-horizontal">
                 <li><a href="./graduacao.html">Graduação</a></li>
                 <li><a href="">Campus</a></li>
-                <li><a href="">Fale Conosco</a></li>
+                <li><a href="./form_contato.php">Fale Conosco</a></li>
                 <li><a href="">Contato</a></li>
                 <li><a class="style-login" href="./cadastro.php">Login</a></li>
             </ul>
         </nav>
+
+        <div class="menu div-flex-vertical">
+            <div class="linha-menu"></div>
+            <div class="linha-menu"></div>
+            <div class="linha-menu"></div>
+        </div>
     </header>
 
     <div class="container">
@@ -120,5 +134,8 @@ $conn->close();
     <footer>
         &copy; Copyright João Manoel | Leonan Freitas | Lucas Vinicius
     </footer>
+
+    <script src="js/reset.js"></script>
+    <script src="https://kit.fontawesome.com/340c674620.js" crossorigin="anonymous"></script>
 </body>
 </html>

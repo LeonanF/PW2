@@ -30,8 +30,8 @@ $conn->close();
 </head>
 <body>
     <header>
-    <div class="logo"><img src="./assets/brasaouepa-removebg-preview (1).png" alt="Emblema da UEPA"></div>
-    <div class="btn-container"><a href="logout.php"><button class="btn-logout">Logout</button></a></div>
+        <div class="logo"><img src="./assets/brasaouepa-removebg-preview (1).png" alt="Emblema da UEPA"></div>
+        <div class="btn-container"><a href="logout.php"><button class="btn-logout">Logout</button></a></div>
     </header>
 
     <main>

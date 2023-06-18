@@ -9,15 +9,18 @@
     <link rel="stylesheet" href="./css/reset.css">
 </head>
 <body>
-
-<header>
+    <header>
         <div class="logo">
             <a href="index.html">
                 <img src="./assets/brasaouepa-removebg-preview (1).png" alt="Emblema da UEPA">
             </a>
         </div>
 
-        <nav class="div-flex-horizontal">
+        <nav>
+            <div class="fechar-menu">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+
             <ul class="div-flex-horizontal">
                 <li><a href="./graduacao.html">Graduação</a></li>
                 <li><a href="">Campus</a></li>
@@ -26,72 +29,80 @@
                 <li><a class="style-login" href="./cadastro.php">Login</a></li>
             </ul>
         </nav>
-</header>
 
-<main class="div-flex-horizontal">
-    <?php
-
-    require 'connection.php';
-
-    $tablename = "contato_msg"; // Nome da tabela
-
-    // Processa os dados do formulário somente se o formulário for enviado
-    if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["nome"]) && isset($_POST["assunto"]) && isset($_POST["email"]) && isset($_POST["msg"])) {
-        $nome = $_POST["nome"];
-        $assunto = $_POST["assunto"];
-        $email = $_POST["email"];
-        $mensagem = $_POST["msg"];
-
-        // Insere os dados na tabela
-        $sql = "INSERT INTO $tablename (nome, assunto, email, mensagem) VALUES ('$nome', '$assunto', '$email', '$mensagem')";
-
-        if ($conn->query($sql) === TRUE) {
-            header("Location: ".$_SERVER['PHP_SELF']."?success=1");
-        } else {
-            echo "Erro ao inserir os dados: " . $conn->error;
-        }
-    }
-
-    // Fecha a conexão com o banco de dados
-    $conn->close();
-    ?>
-
-    <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
-        <div class="imagem">
-            <img src="./assets/atendentes.png" alt="desenho de atendentes">
+        <div class="menu div-flex-vertical">
+            <div class="linha-menu"></div>
+            <div class="linha-menu"></div>
+            <div class="linha-menu"></div>
         </div>
-        
+    </header>
+
+    <main class="div-flex-horizontal">
         <?php
-        if (isset($_GET["success"]) && $_GET["success"] == 1) {
-        echo "<p class='confirm'>Dados inseridos com sucesso!</p>";
-    }
-    ?>
 
-        <label for="nome">Nome completo</label>
-        <input type="text" id="nome" name="nome" placeholder="ex: Anderson Serra da Costa" required>
+        require 'connection.php';
 
-        <label for="assunto">Assunto</label>
-        <select name="assunto" id="assunto" required>
-            <option value=""></option>
-            <option value="A">A</option>
-            <option value="B">B</option>
-            <option value="C">C</option>
-            <option value="D">D</option>
-        </select>
+        $tablename = "contato_msg"; // Nome da tabela
 
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="email" placeholder="ex: gutierrez@gmail.com" required>
+        // Processa os dados do formulário somente se o formulário for enviado
+        if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["nome"]) && isset($_POST["assunto"]) && isset($_POST["email"]) && isset($_POST["msg"])) {
+            $nome = $_POST["nome"];
+            $assunto = $_POST["assunto"];
+            $email = $_POST["email"];
+            $mensagem = $_POST["msg"];
 
-        <label for="msg">Mensagem</label>
-        <textarea id="msg" name="msg" rows="5" style="resize: none;" placeholder="Descreva o seu problema" required></textarea>
+            // Insere os dados na tabela
+            $sql = "INSERT INTO $tablename (nome, assunto, email, mensagem) VALUES ('$nome', '$assunto', '$email', '$mensagem')";
 
-        <input type="submit" value="Enviar">
-    </form>
-</main>
+            if ($conn->query($sql) === TRUE) {
+                header("Location: ".$_SERVER['PHP_SELF']."?success=1");
+            } else {
+                echo "Erro ao inserir os dados: " . $conn->error;
+            }
+        }
 
-<footer>
-        &copy; Copyright João Manoel | Leonan Freitas | Lucas Vinicius
-</footer>
+        // Fecha a conexão com o banco de dados
+        $conn->close();
+        ?>
 
+        <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
+            <div class="imagem">
+                <img src="./assets/atendentes.png" alt="desenho de atendentes">
+            </div>
+            
+            <?php
+            if (isset($_GET["success"]) && $_GET["success"] == 1) {
+            echo "<p class='confirm'>Dados inseridos com sucesso!</p>";
+        }
+        ?>
+
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" placeholder="ex: Anderson Serra da Costa" required>
+
+            <label for="assunto">Assunto</label>
+            <select name="assunto" id="assunto" required>
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+            </select>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="ex: gutierrez@gmail.com" required>
+
+            <label for="msg">Mensagem</label>
+            <textarea id="msg" name="msg" rows="5" style="resize: none;" placeholder="Descreva o seu problema" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+
+    <footer>
+            &copy; Copyright João Manoel | Leonan Freitas | Lucas Vinicius
+    </footer>
+
+    <script src="js/reset.js"></script>
+    <script src="https://kit.fontawesome.com/340c674620.js" crossorigin="anonymous"></script>
 </body>
 </html>
