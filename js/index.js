@@ -7,7 +7,7 @@ const botoes = document.querySelectorAll('.botao-slide');
 let moveSlider = 0
 
 // Cores padrão dos elementos do slider
-setaEsquerda.style.color = '#fff0'
+setaEsquerda.style.display = 'none'
 botoes[0].style.backgroundColor = '#fff'
 
 // Muda a cor dos botões do slider
@@ -24,15 +24,15 @@ function ativaBotao(valor) {
 // Oculta as setas do slider
 function someSeta(valor) {
     if(valor == 0) {
-        setaEsquerda.style.color = '#fff0'
+        setaEsquerda.style.display = 'none'
     } else {
-        setaEsquerda.style.color = '#fff'
+        setaEsquerda.style.display = 'block'
     } 
     
     if(valor == -200) {
-        setaDireita.style.color = '#fff0'
+        setaDireita.style.display = 'none'
     } else {
-        setaDireita.style.color = '#fff'
+        setaDireita.style.display = 'block'
     }
 }
 
