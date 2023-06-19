@@ -57,15 +57,7 @@ CREATE TABLE `usuarios` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `usuarios`
---
-
-LOCK TABLES `usuarios` WRITE;
-/*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
-INSERT INTO `usuarios` VALUES (2,'Leonan','$2y$10$ZwkcraKC/8hM546fnMXKw.IcZTOyT6pPIRE5YqbKgKRTXanHvJg0e');
-/*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
-UNLOCK TABLES;
-
+-- Dumping data for tab
 --
 -- Dumping routines for database 'contatos'
 --
