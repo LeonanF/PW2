@@ -7,15 +7,12 @@ const pageContent = document.querySelector('body');
 // Função para abrir o menu
 const openMenu = () => {
   nav.style.display = 'flex';
-  pageContent.style.overflow = 'hidden';
-  document.documentElement.style.overflow = 'hidden';
 };
 
 // Função para fechar o menu
 const closeMenu = () => {
   nav.style.display = 'none';
-  pageContent.style.overflow = 'hidden';
-  document.documentElement.style.overflow = 'auto';
+  menuButton.style.display = 'flex';
 };
 
 // Função para fechar o menu quando um link é clicado
