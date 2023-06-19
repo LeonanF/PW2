@@ -105,9 +105,9 @@
 
     </main>
 
-    <section class="div-flex-vertical">
-        <p>CONTATOS OFICIAS: </p>
-        <div class="redes-sociais">
+    <section>
+        <h3>CONTATOS OFICIAS: </h3>
+        <div class="redes-sociais div-flex-horizontal">
             <a href="https://www.instagram.com/uepaoficial/"><img src="./assets/icons8-instagram.svg" alt="logo instagram"></a>
             <a href="https://www.facebook.com/UepaOficial"><img src="./assets/icons8-facebook.svg" alt="logo facebook"></a>
             <a href="https://twitter.com/uepaoficial"><img src="./assets/icons8-twitter.svg" alt="logo twitter"></a>

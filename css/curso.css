@@ -9,13 +9,15 @@ body {
     align-items: center;
     background-color: #fff;
     border-radius: 0.5%;
-    padding-top: 0.5%;
+    padding: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
 }
 
 .nde-colegiado h2, 
 .nde-colegiado h3 {
     text-decoration: underline;
+    text-align: center;
+    margin: 10px;
 }
 .nde-colegiado p {
     margin: 1.5%;

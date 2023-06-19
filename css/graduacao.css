@@ -5,9 +5,10 @@
     width: 100%;
 }
 
-.estrutura-curso h2{
+.estrutura-curso h2 {
     padding: 1rem;
     font-weight: 600;
+    text-align: center;
 }
 
 .estrutura-curso h4{
@@ -23,10 +24,14 @@
     color: #000;
 }
 
-.semestre{
+.semestre {
     display: flex;
     align-items: center;
-    width: 50%;
+    width: max-content;
+}
+
+main li {
+    list-style-type: disc;
 }
 
 .professor {
@@ -65,9 +70,32 @@
 
 .corpo-docente h3 {
     margin-top: 3%;
+    text-align: center;
     text-decoration: underline;
 }
 
 .professor img {
     width: 30%;
+}
+
+@media (max-width: 728px) {
+    .box-semestre,
+    .professor {
+        flex-direction: column;
+        margin: 40px auto;
+        min-width: 70vw;
+    }
+
+    .semestre {
+        flex-direction: column;
+        max-width: 90%;
+        margin: 10px 0px;
+        padding: 10px;
+        border-bottom: 2px solid #001c7d;
+    }
+    
+    .semestre h4 {
+        text-align: center;
+        padding: 20px;
+    }
 }

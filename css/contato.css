@@ -94,9 +94,21 @@ section {
     border-radius: 8px;
 }
 
+h3 {
+    text-align: center;
+}
+
 .redes-sociais {
+    flex-wrap: wrap;
     margin: 10px;
-    padding: 10px;
+    padding: 10px 50px;
+}
+
+.redes-sociais a {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    min-width: 50%;
 }
 
 .redes-sociais a img{
