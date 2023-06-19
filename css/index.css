@@ -126,4 +126,15 @@ h2 {
         display: block;
         margin: 5px 0px;
     }
+    .slider, .sec-slider, .slide, .sec-slider img{
+        max-height: 30vh;
+    }
+
+    .setas-slide{
+        display: none;
+    }
+
+    .botao-slide{
+        transform: translateY(271%);
+    }
 }
