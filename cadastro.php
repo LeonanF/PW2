@@ -52,6 +52,8 @@ $conn->close();
     <link rel="stylesheet" href="./css/cadastro.css">
     <link rel="stylesheet" href="./css/reset.css">
     <script src="./js/autenticacao.js" defer></script>
+    <script src="./js/reset.js" defer></script>
+    <script src="https://kit.fontawesome.com/340c674620.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -134,8 +136,5 @@ $conn->close();
     <footer>
         &copy; Copyright João Manoel | Leonan Freitas | Lucas Vinicius
     </footer>
-
-    <script src="js/reset.js"></script>
-    <script src="https://kit.fontawesome.com/340c674620.js" crossorigin="anonymous"></script>
 </body>
 </html>
