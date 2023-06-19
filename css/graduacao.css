@@ -27,7 +27,7 @@
 .semestre {
     display: flex;
     align-items: center;
-    width: max-content;
+    width: 50%;
 }
 
 main li {
@@ -89,6 +89,7 @@ main li {
     .semestre {
         flex-direction: column;
         max-width: 90%;
+        width: max-content;
         margin: 10px 0px;
         padding: 10px;
         border-bottom: 2px solid #001c7d;
