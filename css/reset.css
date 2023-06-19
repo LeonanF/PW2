@@ -118,7 +118,7 @@ footer {
     }
 
     nav {
-        display: flex;
+        display: none;
         flex-direction: column;
         width: 50vw;
         height: 100vh;
